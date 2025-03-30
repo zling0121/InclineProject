@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duquesne Incline</title>
+  <link rel="stylesheet" href="../static/style.css" />
+</head>
+<body>
+  <header>
+    <img src="../static/image/banner.jpg" alt="Duquesne Incline Banner" width="500" height="380" />
+
+    <nav>
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="../views/history.html">History</a>
+      <a class="nav-link" href="../views/visit.html">Visit</a>
+      <a class="nav-link" href="../views/shop.html">Gift Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <div class="info-sections">
+      <div class="info-column">
+        <h2>Contact Information:</h2>
+        <table class="contact-table">
+          <tr>
+            <th>Address</th>
+            <td>1197 West Carson Street, Pittsburgh, PA 15219</td>
+          </tr>
+          <tr>
+            <th>Phone Number</th>
+            <td>412.381.1665</td>
+          </tr>
+          <tr>
+            <th>Fax</th>
+            <td>412.381.1943</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>duq.incline@duquesneincline.org</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="info-column">
+        <h2>Join Our Mailing List</h2>
+        <form action="subscribe.php" method="post" id="mailing-list-form">
+          <div>
+            <label for="name">Name: <span style="color:red;">*</span></label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+          </div>
+          <div>
+            <label for="email">Email Address: <span style="color:red;">*</span></label>
+            <input type="email" id="email" name="email" required minlength="5" maxlength="100">
+          </div>
+          <div>
+            <input type="checkbox" id="sms" name="sms">
+            <label for="sms">I would like to receive messages via SMS text</label>
+          </div>
+          <div>
+            <label for="mobile">Mobile Phone:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Numbers only" pattern="\d+" minlength="10" maxlength="15">
+          </div>
+          <div>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" placeholder="5-digit code" pattern="\d{5}" minlength="5" maxlength="5">
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="info-column">
+        <h2>Map:</h2>
+        <div id="map"></div>
+      </div>
+
+      <div class="info-column">
+        <h2>Useful Links:</h2>
+        <ul>
+          <li>Facebook: <a href="https://www.facebook.com/TheDuquesneIncline">https://www.facebook.com/TheDuquesneIncline</a></li>
+          <li>Yelp: <a href="https://www.yelp.com/biz/duquesne-incline-pittsburgh">https://www.yelp.com/biz/duquesne-incline-pittsburgh</a></li>
+          <li>Viator: <a href="https://www.viator.com/Pittsburgh-attractions/Duquesne-Incline/d22639-a21677">https://www.viator.com/Pittsburgh-attractions/Duquesne-Incline/d22639-a21677</a></li>
+          <li>Visit Pittsburgh: <a href="https://www.visitpittsburgh.com/directory/duquesne-incline/">https://www.visitpittsburgh.com/directory/duquesne-incline/</a></li>
+          <li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Duquesne_Incline">https://en.wikipedia.org/wiki/Duquesne_Incline</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact us at <a href="mailto:info@duquesneincline.org">duq.incline@duquesneincline.org</a></p>
+    <p>&copy; 2009. All Rights Reserved</p>
+  </footer>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOdvtCilFr0fdWS1-uC3uhiNV7qCA6JlU&callback=initMap">
+  </script>
+  <script src="../static/script.js"></script>
+</body>
+</html>
