@@ -13,16 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function initMap() {
-    // Coordinates for the Duquesne Incline (adjust if necessary)
     const inclineLocation = { lat: 40.4399, lng: -80.0176 };
     
-    // Create a map centered at the Duquesne Incline
     const map = new google.maps.Map(document.getElementById("map"), {
       center: inclineLocation,
       zoom: 16
     });
     
-    // Place a marker at the Duquesne Incline
     new google.maps.Marker({
       position: inclineLocation,
       map: map,
